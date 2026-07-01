@@ -1,0 +1,31 @@
+# Центр содействия кандидатам — конфигурация Apache (shared-хостинг reg.ru)
+
+Options -Indexes
+AddDefaultCharset UTF-8
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Принудительный HTTPS (после выпуска SSL в панели reg.ru)
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Форма шлёт заявку на /api/lead → обрабатывает PHP-скрипт
+    RewriteRule ^api/lead/?$ send-lead.php [L]
+</IfModule>
+
+# Кэш статики
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType image/svg+xml "access plus 30 days"
+    ExpiresByType image/x-icon "access plus 30 days"
+</IfModule>
+
+# Gzip
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json
+</IfModule>

@@ -1,5 +1,7 @@
 node_modules/
 server/.env
 server/leads.jsonl
+config.php
+*.jsonl
 *.log
 .DS_Store
