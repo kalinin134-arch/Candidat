@@ -1,18 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0e1217"/>
-  <rect width="1200" height="630" fill="url(#g)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0d1013"></rect>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#grid)" opacity="0.5"></rect>
   <defs>
-    <radialGradient id="g" cx="0.8" cy="0" r="1">
-      <stop offset="0" stop-color="#c89b3c" stop-opacity="0.25"/>
-      <stop offset="0.6" stop-color="#0e1217" stop-opacity="0"/>
-    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#1c2129" stroke-width="1"></path>
+    </pattern>
   </defs>
-  <g transform="translate(90,150)">
-    <path d="M40 0 5 12v26c0 21 15 38 35 44 20-6 35-23 35-44V12L40 0Z" fill="#141a22" stroke="#c89b3c" stroke-width="3"/>
-    <path d="M40 14l6 12 13 2-9.5 9.3 2.2 13L40 37.6l-11.7 6.2 2.2-13L21 21.6l13-2L40 14Z" fill="#e0b758"/>
-  </g>
-  <text x="90" y="350" fill="#ffffff" font-family="Oswald, Arial, sans-serif" font-size="68" font-weight="700">СЛУЖБА ПО КОНТРАКТУ</text>
-  <text x="90" y="425" fill="#e0b758" font-family="Oswald, Arial, sans-serif" font-size="68" font-weight="700">ПО ВСЕЙ РОССИИ</text>
-  <text x="90" y="500" fill="#c5cbd3" font-family="Manrope, Arial, sans-serif" font-size="32">Единовременно до 3 100 000 ₽ · довольствие от 250 000 ₽/мес</text>
-  <text x="90" y="560" fill="#9aa3ad" font-family="Manrope, Arial, sans-serif" font-size="28">Центр содействия кандидатам · 8 (800) 000-00-00</text>
+  <path d="M600 90 L660 112 V168 C660 210 634 246 600 262 C566 246 540 210 540 168 V112 Z" fill="none" stroke="#c89b3c" stroke-width="3"></path>
+  <path d="M580 232 V194 H620 V232" stroke="#c89b3c" stroke-width="3" stroke-linejoin="round"></path>
+  <path d="M580 194 V186 H588 V194 M596 194 V186 H604 V194 M620 194 V186 H612 V194" stroke="#c89b3c" stroke-width="2.5" stroke-linejoin="round"></path>
+  <text x="600" y="340" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="700" font-size="40" letter-spacing="2" fill="#ffffff">ЦЕНТР СОДЕЙСТВИЯ КАНДИДАТАМ</text>
+  <text x="600" y="392" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="500" font-size="22" letter-spacing="4" fill="#c89b3c">СЛУЖБА ПО КОНТРАКТУ ПО ВСЕЙ РОССИИ</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="700" font-size="52" fill="#d4af5a">ДО 4 500 000 ₽</text>
 </svg>
