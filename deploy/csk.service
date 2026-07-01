@@ -1,0 +1,26 @@
+# /etc/systemd/system/csk.service
+# systemd-юнит для автозапуска Node-сервера.
+# Установка:
+#   sudo cp deploy/csk.service /etc/systemd/system/csk.service
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now csk
+# Логи:  journalctl -u csk -f
+
+[Unit]
+Description=Центр содействия кандидатам — сайт и приём заявок
+After=network.target
+
+[Service]
+Type=simple
+# Укажите пользователя, от которого запускается сервис (не root для безопасности)
+User=www-data
+# Путь к папке server (где лежит server.js)
+WorkingDirectory=/var/www/csk/server
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+# .env читается автоматически из WorkingDirectory
+
+[Install]
+WantedBy=multi-user.target

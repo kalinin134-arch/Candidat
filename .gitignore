@@ -1,0 +1,5 @@
+node_modules/
+server/.env
+server/leads.jsonl
+*.log
+.DS_Store

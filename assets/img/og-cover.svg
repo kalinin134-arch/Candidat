@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0e1217"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <defs>
+    <radialGradient id="g" cx="0.8" cy="0" r="1">
+      <stop offset="0" stop-color="#c89b3c" stop-opacity="0.25"/>
+      <stop offset="0.6" stop-color="#0e1217" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(90,150)">
+    <path d="M40 0 5 12v26c0 21 15 38 35 44 20-6 35-23 35-44V12L40 0Z" fill="#141a22" stroke="#c89b3c" stroke-width="3"/>
+    <path d="M40 14l6 12 13 2-9.5 9.3 2.2 13L40 37.6l-11.7 6.2 2.2-13L21 21.6l13-2L40 14Z" fill="#e0b758"/>
+  </g>
+  <text x="90" y="350" fill="#ffffff" font-family="Oswald, Arial, sans-serif" font-size="68" font-weight="700">СЛУЖБА ПО КОНТРАКТУ</text>
+  <text x="90" y="425" fill="#e0b758" font-family="Oswald, Arial, sans-serif" font-size="68" font-weight="700">ПО ВСЕЙ РОССИИ</text>
+  <text x="90" y="500" fill="#c5cbd3" font-family="Manrope, Arial, sans-serif" font-size="32">Единовременно до 3 100 000 ₽ · довольствие от 250 000 ₽/мес</text>
+  <text x="90" y="560" fill="#9aa3ad" font-family="Manrope, Arial, sans-serif" font-size="28">Центр содействия кандидатам · 8 (800) 000-00-00</text>
+</svg>

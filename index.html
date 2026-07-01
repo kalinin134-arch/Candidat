@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Центр содействия кандидатам — служба по контракту по всей России</title>
+  <meta name="description" content="Помогаем заключить контракт на военную службу по всей России. Единовременная выплата до 3 100 000 ₽, денежное довольствие от 250 000 ₽/мес, полный социальный пакет. Бесплатное сопровождение кандидата на всех этапах." />
+  <meta name="keywords" content="служба по контракту, контракт на военную службу, выплаты контрактникам, военная служба, центр содействия кандидатам" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.ru/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Центр содействия кандидатам — служба по контракту по всей России" />
+  <meta property="og:description" content="Единовременная выплата до 3 100 000 ₽, довольствие от 250 000 ₽/мес. Бесплатное сопровождение кандидата на всех этапах." />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:image" content="/assets/img/og-cover.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Центр содействия кандидатам">
+        <img src="/assets/img/logo.svg" alt="" class="logo__mark" width="40" height="40" />
+        <span class="logo__text">
+          <span class="logo__name">Центр содействия</span>
+          <span class="logo__sub">кандидатам</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#payments" class="nav__link">Выплаты</a>
+        <a href="#conditions" class="nav__link">Условия</a>
+        <a href="#benefits" class="nav__link">Гарантии</a>
+        <a href="#steps" class="nav__link">Как оформить</a>
+        <a href="#faq" class="nav__link">Вопросы</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+78000000000" class="header__phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.2 1l-2.3 2.1Z" fill="currentColor"/></svg>
+          <span>8 (800) 000-00-00</span>
+        </a>
+        <button class="btn btn--primary header__cta" data-open-modal>Оставить заявку</button>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Служба по контракту в Вооружённых силах РФ</span>
+        <h1 class="hero__title">
+          Заключите контракт на военную службу —
+          <span class="accent">по всей России</span>
+        </h1>
+
+        <div class="hero__payout">
+          <span class="hero__payout-label">Единовременно при подписании контракта</span>
+          <span class="hero__payout-sum">до <b data-counter="3100000">3 100 000</b> ₽</span>
+          <span class="hero__payout-note">федеральная + региональная выплаты</span>
+        </div>
+
+        <p class="hero__lead">
+          Подберём подразделение, должность и регион. Поможем с документами,
+          медкомиссией и решением вопросов с кредитами и долгами.
+          <b>Сопровождение кандидата — бесплатно.</b>
+        </p>
+
+        <ul class="hero__badges">
+          <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Работаем по всей РФ</li>
+          <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Ответ в течение 15 минут</li>
+          <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg> Без посредников</li>
+        </ul>
+      </div>
+
+      <!-- Hero quick form -->
+      <div class="hero__form-wrap">
+        <form class="quickform" data-lead-form data-form-name="hero">
+          <h2 class="quickform__title">Бесплатная консультация</h2>
+          <p class="quickform__sub">Оставьте контакты — перезвоним и ответим на все вопросы</p>
+
+          <div class="field">
+            <input type="text" name="name" class="input" placeholder="Ваше имя" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <input type="tel" name="phone" class="input" placeholder="+7 (___) ___-__-__" inputmode="tel" autocomplete="tel" required />
+          </div>
+          <div class="field">
+            <input type="text" name="city" class="input" placeholder="Город / регион" autocomplete="address-level2" />
+          </div>
+
+          <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
+
+          <button type="submit" class="btn btn--primary btn--block btn--lg">
+            Получить консультацию
+          </button>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required checked />
+            <span>Согласен с <a href="/privacy.html" target="_blank" rel="noopener">политикой обработки персональных данных</a></span>
+          </label>
+          <p class="quickform__msg" data-form-msg role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS STRIP ============ -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <span class="stat__num">от <b data-counter="250000">250 000</b> ₽</span>
+        <span class="stat__label">денежное довольствие в месяц</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">до <b data-counter="3100000">3 100 000</b> ₽</span>
+        <span class="stat__label">единовременная выплата</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num"><b data-counter="89">89</b></span>
+        <span class="stat__label">регионов России</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">статус</span>
+        <span class="stat__label">ветерана боевых действий</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAYMENTS ============ -->
+  <section class="section" id="payments">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Денежное обеспечение</span>
+        <h2 class="section__title">Выплаты военнослужащим по контракту</h2>
+        <p class="section__desc">Складываются из единовременных выплат при подписании, ежемесячного довольствия, боевых и дополнительных надбавок.</p>
+      </div>
+
+      <!-- One-time payments -->
+      <div class="payouts">
+        <div class="payout-card payout-card--accent">
+          <span class="payout-card__label">Единовременно при подписании</span>
+          <span class="payout-card__sum">до 3 100 000 ₽</span>
+          <p class="payout-card__text">Федеральная выплата от Министерства обороны + региональная выплата субъекта РФ. Итоговая сумма зависит от региона заключения контракта.</p>
+        </div>
+        <div class="payout-card">
+          <span class="payout-card__label">Ежемесячное довольствие</span>
+          <span class="payout-card__sum">от 250 000 ₽</span>
+          <p class="payout-card__text">Зависит от воинской должности, выслуги, классности и условий несения службы.</p>
+        </div>
+        <div class="payout-card">
+          <span class="payout-card__label">Страховые выплаты</span>
+          <span class="payout-card__sum">до 3 000 000 ₽</span>
+          <p class="payout-card__text">Страхование жизни и здоровья за счёт государства. Дополнительная выплата при ранении.</p>
+        </div>
+      </div>
+
+      <!-- Salaries by position -->
+      <h3 class="subsection-title">Ежемесячное довольствие по должностям</h3>
+      <div class="salary-grid">
+        <div class="salary"><span class="salary__pos">Стрелок</span><span class="salary__sum">от 210 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Водитель</span><span class="salary__sum">от 210 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Пулемётчик</span><span class="salary__sum">от 214 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Гранатомётчик</span><span class="salary__sum">от 214 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Старший сапёр</span><span class="salary__sum">от 218 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Связист, радиотелефонист</span><span class="salary__sum">от 220 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Оператор БПЛА</span><span class="salary__sum">от 230 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Командир отделения</span><span class="salary__sum">от 232 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Заместитель командира взвода</span><span class="salary__sum">от 242 000 ₽</span></div>
+        <div class="salary"><span class="salary__pos">Медик, санитар</span><span class="salary__sum">от 222 000 ₽</span></div>
+      </div>
+
+      <!-- Combat bonuses -->
+      <h3 class="subsection-title">Дополнительные и боевые выплаты</h3>
+      <div class="bonus-grid">
+        <div class="bonus"><span class="bonus__sum">8 000 ₽</span><span class="bonus__text">за каждые сутки активных наступательных действий</span></div>
+        <div class="bonus"><span class="bonus__sum">50 000 ₽</span><span class="bonus__text">за каждый километр продвижения штурмовых подразделений</span></div>
+        <div class="bonus"><span class="bonus__sum">до 1 000 000 ₽</span><span class="bonus__text">за захват техники противника (танк, HIMARS и др.)</span></div>
+        <div class="bonus"><span class="bonus__sum">300%</span><span class="bonus__text">ежемесячная надбавка за особые условия несения службы</span></div>
+        <div class="bonus"><span class="bonus__sum">до 3 000 000 ₽</span><span class="bonus__text">единовременная выплата при ранении</span></div>
+        <div class="bonus"><span class="bonus__sum">от 5 до 500 тыс. ₽</span><span class="bonus__text">вознаграждение за уничтожение техники противника</span></div>
+      </div>
+
+      <p class="disclaimer">
+        Итоговые суммы выплат зависят от региона, воинской должности, выслуги лет и действующих
+        нормативно-правовых актов. Точные условия уточняйте при обращении в наш центр.
+      </p>
+
+      <div class="section__cta">
+        <button class="btn btn--primary btn--lg" data-open-modal>Узнать выплаты в моём регионе</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONDITIONS / REQUIREMENTS ============ -->
+  <section class="section section--alt" id="conditions">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Условия</span>
+        <h2 class="section__title">Кто может заключить контракт</h2>
+        <p class="section__desc">Базовые требования к кандидатам. Точные критерии помогаем оценить на бесплатной консультации.</p>
+      </div>
+
+      <div class="cols-2">
+        <div class="req-card">
+          <h3 class="req-card__title">Требования к кандидату</h3>
+          <ul class="check-list">
+            <li>Гражданство РФ. Для иностранных граждан — упрощённый порядок получения гражданства</li>
+            <li>Возраст от 18 до 60 лет</li>
+            <li>Категория годности по здоровью «А» или «Б» (определяется на медкомиссии)</li>
+            <li>Отсутствие непогашенной судимости по ряду тяжких статей</li>
+            <li>Для большинства должностей образование и опыт службы не требуются</li>
+          </ul>
+        </div>
+        <div class="req-card">
+          <h3 class="req-card__title">Что входит в контракт</h3>
+          <ul class="check-list">
+            <li>Срок контракта — от 1 года</li>
+            <li>Денежное довольствие от 250 000 ₽ в месяц</li>
+            <li>Полное вещевое и продовольственное обеспечение</li>
+            <li>Бесплатное обучение военной специальности</li>
+            <li>Оплачиваемый отпуск и проезд к месту отдыха</li>
+            <li>Статус ветерана боевых действий и государственные льготы</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="help-banner">
+        <div class="help-banner__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 9.1 8 11 4.6-1.9 8-6 8-11V5l-8-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="help-banner__text">
+          <h3>Есть кредиты, долги или проблемы с документами?</h3>
+          <p>Поможем разобраться с кредитными и налоговыми каникулами, восстановлением документов и оформлением положенных льгот. Это часть нашего бесплатного сопровождения.</p>
+        </div>
+        <button class="btn btn--light" data-open-modal>Обсудить мою ситуацию</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIALTIES ============ -->
+  <section class="section" id="specialties">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Направления</span>
+        <h2 class="section__title">Военные специальности</h2>
+        <p class="section__desc">Подберём должность под ваш опыт, здоровье и пожелания.</p>
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec-card"><span class="spec-card__ico">🛩️</span><h3>Оператор БПЛА</h3><p>Управление беспилотными системами, разведка и наблюдение.</p></div>
+        <div class="spec-card"><span class="spec-card__ico">📡</span><h3>Связист</h3><p>Развёртывание и обслуживание систем связи.</p></div>
+        <div class="spec-card"><span class="spec-card__ico">🚚</span><h3>Водитель</h3><p>Управление и обслуживание военной техники.</p></div>
+        <div class="spec-card"><span class="spec-card__ico">🛠️</span><h3>Сапёр-инженер</h3><p>Инженерное обеспечение, разминирование.</p></div>
+        <div class="spec-card"><span class="spec-card__ico">⚕️</span><h3>Медик, фельдшер</h3><p>Оказание медицинской помощи в подразделении.</p></div>
+        <div class="spec-card"><span class="spec-card__ico">🔧</span><h3>Ремонт техники</h3><p>Техническое обслуживание и ремонт вооружения.</p></div>
+        <div class="spec-card"><span class="spec-card__ico">🎯</span><h3>Стрелок, штурмовик</h3><p>Выполнение задач в составе подразделения.</p></div>
+        <div class="spec-card"><span class="spec-card__ico">💥</span><h3>Артиллерист</h3><p>Расчёт и применение артиллерийских систем.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS ============ -->
+  <section class="section section--alt" id="benefits">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Социальный пакет</span>
+        <h2 class="section__title">Льготы и гарантии</h2>
+        <p class="section__desc">Государственные гарантии военнослужащим по контракту и членам их семей.</p>
+      </div>
+
+      <div class="benefit-grid">
+        <div class="benefit">
+          <h3 class="benefit__title">💳 Финансовые</h3>
+          <ul class="check-list check-list--sm">
+            <li>Кредитные и налоговые каникулы</li>
+            <li>Возможность списания кредитов при контракте свыше 1 года</li>
+            <li>Единовременная выплата на каждого несовершеннолетнего ребёнка</li>
+            <li>Субсидии на газификацию домовладения</li>
+          </ul>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title">⚕️ Медицинские</h3>
+          <ul class="check-list check-list--sm">
+            <li>Страхование жизни и здоровья за счёт бюджета</li>
+            <li>Бесплатное санаторно-курортное лечение</li>
+            <li>Бесплатное обследование и реабилитация</li>
+            <li>Медобслуживание в учреждениях Минобороны</li>
+          </ul>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title">👨‍👩‍👧 Семейные</h3>
+          <ul class="check-list check-list--sm">
+            <li>Место в детском саду вне очереди</li>
+            <li>Бесплатное питание школьникам и студентам</li>
+            <li>Бесплатный отдых детей в оздоровительных лагерях</li>
+            <li>Путёвки на санаторно-курортное лечение</li>
+          </ul>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title">🏖️ Отпуск</h3>
+          <ul class="check-list check-list--sm">
+            <li>Оплачиваемый отпуск не реже раза в полугодие</li>
+            <li>Дополнительный отпуск 15 суток ежегодно</li>
+            <li>Бесплатный проезд к месту отдыха и обратно</li>
+          </ul>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title">⚖️ Правовые</h3>
+          <ul class="check-list check-list--sm">
+            <li>Сохранение рабочего места на время службы</li>
+            <li>Отсрочка по ряду обязательств и платежей</li>
+            <li>Возврат водительских удостоверений</li>
+            <li>Приоритет в социальных учреждениях</li>
+          </ul>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title">🎖️ Статус и пенсия</h3>
+          <ul class="check-list check-list--sm">
+            <li>Статус «Ветеран боевых действий»</li>
+            <li>Государственные награды и знаки отличия</li>
+            <li>Право на военную пенсию по выслуге</li>
+            <li>Льготы на образование детей</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STEPS ============ -->
+  <section class="section" id="steps">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Как это работает</span>
+        <h2 class="section__title">Оформление в 5 шагов</h2>
+        <p class="section__desc">Сопровождаем на каждом этапе — от первого звонка до подписания контракта.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">1</span>
+          <h3 class="step__title">Заявка</h3>
+          <p>Оставляете заявку на сайте или звоните на бесплатную линию.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">2</span>
+          <h3 class="step__title">Консультация</h3>
+          <p>Подбираем подразделение, должность и регион службы под вас.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">3</span>
+          <h3 class="step__title">Документы</h3>
+          <p>Помогаем собрать документы и пройти медкомиссию.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">4</span>
+          <h3 class="step__title">Пункт отбора</h3>
+          <p>Сопровождаем в пункт отбора на военную службу по контракту.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">5</span>
+          <h3 class="step__title">Контракт</h3>
+          <p>Подписываете контракт и получаете положенные выплаты.</p>
+        </li>
+      </ol>
+
+      <div class="section__cta">
+        <button class="btn btn--primary btn--lg" data-open-modal>Начать с бесплатной консультации</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEAD FORM (main) ============ -->
+  <section class="section section--cta" id="apply">
+    <div class="container leadcta">
+      <div class="leadcta__text">
+        <h2 class="leadcta__title">Оставьте заявку</h2>
+        <p class="leadcta__desc">Перезвоним в течение 15 минут, ответим на все вопросы и рассчитаем выплаты в вашем регионе. Консультация и сопровождение — бесплатно.</p>
+        <ul class="leadcta__list">
+          <li><svg class="ico-check" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Без обязательств и навязывания</li>
+          <li><svg class="ico-check" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Конфиденциально</li>
+          <li><svg class="ico-check" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Работаем по всей России</li>
+        </ul>
+        <a href="tel:+78000000000" class="leadcta__phone">8 (800) 000-00-00</a>
+      </div>
+
+      <form class="quickform quickform--light" data-lead-form data-form-name="apply">
+        <div class="field">
+          <label class="label">Имя</label>
+          <input type="text" name="name" class="input" placeholder="Как к вам обращаться" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label class="label">Телефон</label>
+          <input type="tel" name="phone" class="input" placeholder="+7 (___) ___-__-__" inputmode="tel" autocomplete="tel" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label class="label">Город / регион</label>
+            <input type="text" name="city" class="input" placeholder="Например, Москва" autocomplete="address-level2" />
+          </div>
+          <div class="field">
+            <label class="label">Возраст</label>
+            <input type="number" name="age" class="input" placeholder="35" min="18" max="65" inputmode="numeric" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Интересующая специальность <span class="muted">(необязательно)</span></label>
+          <select name="position" class="input">
+            <option value="">Не выбрано</option>
+            <option>Стрелок, штурмовик</option>
+            <option>Водитель</option>
+            <option>Оператор БПЛА</option>
+            <option>Связист</option>
+            <option>Сапёр-инженер</option>
+            <option>Медик, фельдшер</option>
+            <option>Ремонт техники</option>
+            <option>Артиллерист</option>
+            <option>Другое / нужна консультация</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="label">Комментарий <span class="muted">(необязательно)</span></label>
+          <textarea name="comment" class="input" rows="2" placeholder="Кратко опишите вашу ситуацию"></textarea>
+        </div>
+
+        <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
+
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку</button>
+
+        <label class="consent">
+          <input type="checkbox" name="consent" required checked />
+          <span>Согласен с <a href="/privacy.html" target="_blank" rel="noopener">политикой обработки персональных данных</a></span>
+        </label>
+        <p class="quickform__msg" data-form-msg role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--alt" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <span class="section__eyebrow">FAQ</span>
+        <h2 class="section__title">Частые вопросы</h2>
+      </div>
+
+      <div class="faq" id="faqList">
+        <details class="faq__item">
+          <summary class="faq__q">Сколько стоят ваши услуги?</summary>
+          <div class="faq__a">Для кандидата сопровождение полностью бесплатное. Мы помогаем разобраться в условиях, подобрать подразделение и оформить документы.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Где я буду служить?</summary>
+          <div class="faq__a">Мы работаем по всей России и помогаем подобрать подразделение, должность и регион с учётом ваших пожеланий, опыта и состояния здоровья.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Какие выплаты я получу?</summary>
+          <div class="faq__a">Единовременная выплата при подписании (федеральная + региональная), ежемесячное довольствие от 250 000 ₽, а также боевые и дополнительные надбавки. Точные суммы зависят от региона и должности — рассчитаем на консультации.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Возьмут ли меня с кредитами или долгами?</summary>
+          <div class="faq__a">Да. Более того, помогаем оформить кредитные и налоговые каникулы, а при определённых условиях — добиться списания части кредитных обязательств.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Какой возраст подходит?</summary>
+          <div class="faq__a">Контракт можно заключить в возрасте от 18 до 60 лет. Итоговое решение зависит от состояния здоровья и выбранной должности.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Берут ли иностранных граждан?</summary>
+          <div class="faq__a">Да, иностранные граждане могут заключить контракт. Для них предусмотрен упрощённый порядок получения гражданства РФ.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Сколько занимает оформление?</summary>
+          <div class="faq__a">Обычно от нескольких дней. Скорость зависит от готовности документов и прохождения медкомиссии — мы помогаем ускорить процесс.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS / FOOTER ============ -->
+  <footer class="footer" id="contacts">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#top" class="logo logo--footer">
+          <img src="/assets/img/logo.svg" alt="" class="logo__mark" width="40" height="40" />
+          <span class="logo__text">
+            <span class="logo__name">Центр содействия</span>
+            <span class="logo__sub">кандидатам</span>
+          </span>
+        </a>
+        <p class="footer__about">Помогаем гражданам заключить контракт на военную службу по всей России. Бесплатная консультация и сопровождение на всех этапах.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <a href="tel:+78000000000" class="footer__contact">8 (800) 000-00-00</a>
+        <span class="footer__note">Звонок по России бесплатный</span>
+        <a href="mailto:info@example.ru" class="footer__contact">info@example.ru</a>
+        <div class="footer__socials">
+          <a href="#" aria-label="Telegram" class="social">TG</a>
+          <a href="#" aria-label="WhatsApp" class="social">WA</a>
+          <a href="#" aria-label="VK" class="social">VK</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Разделы</h3>
+        <a href="#payments" class="footer__link">Выплаты</a>
+        <a href="#conditions" class="footer__link">Условия</a>
+        <a href="#benefits" class="footer__link">Льготы и гарантии</a>
+        <a href="#steps" class="footer__link">Как оформить</a>
+        <a href="#faq" class="footer__link">Вопросы</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Документы</h3>
+        <a href="/privacy.html" class="footer__link">Политика конфиденциальности</a>
+        <a href="/privacy.html#consent" class="footer__link">Согласие на обработку ПД</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Центр содействия кандидатам. ИНН 0000000000 · ОГРН 0000000000000.</p>
+      <p class="footer__disclaimer">Сайт носит информационный характер и не является публичной офертой. Окончательные условия службы и размеры выплат определяются Министерством обороны РФ и нормативными актами субъектов РФ.</p>
+    </div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA ============ -->
+  <div class="mobile-cta">
+    <a href="tel:+78000000000" class="btn btn--ghost mobile-cta__call">Позвонить</a>
+    <button class="btn btn--primary mobile-cta__apply" data-open-modal>Оставить заявку</button>
+  </div>
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close-modal aria-label="Закрыть">&times;</button>
+      <form class="quickform" data-lead-form data-form-name="modal">
+        <h2 class="quickform__title" id="modalTitle">Оставить заявку</h2>
+        <p class="quickform__sub">Перезвоним в течение 15 минут и ответим на все вопросы</p>
+
+        <div class="field">
+          <input type="text" name="name" class="input" placeholder="Ваше имя" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <input type="tel" name="phone" class="input" placeholder="+7 (___) ___-__-__" inputmode="tel" autocomplete="tel" required />
+        </div>
+        <div class="field">
+          <input type="text" name="city" class="input" placeholder="Город / регион" autocomplete="address-level2" />
+        </div>
+
+        <div class="hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
+
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку</button>
+
+        <label class="consent">
+          <input type="checkbox" name="consent" required checked />
+          <span>Согласен с <a href="/privacy.html" target="_blank" rel="noopener">политикой обработки персональных данных</a></span>
+        </label>
+        <p class="quickform__msg" data-form-msg role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
