@@ -4,4 +4,4 @@ Disallow: /privacy.html
 Disallow: /consent.html
 Disallow: /requisites.html
 
-Sitemap: https://xn--80aaxgbbpccgxxd.com/sitemap.xml
+Sitemap: https://контрактникам.com/sitemap.xml
